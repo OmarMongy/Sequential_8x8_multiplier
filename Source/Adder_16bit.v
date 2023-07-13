@@ -1,4 +1,4 @@
-module Adder_16bit(
+module adder (
   input [15:0] dataa,
   input [15:0] datab,
   output [15:0] sum
