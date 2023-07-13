@@ -98,3 +98,8 @@ During this time period, values that need to be processed within the datapath ar
   <br>
   <em>8x8 Sequential Multiplier</em>
 </p>
+<p align="center">
+  <img src="https://github.com/islamibr/8x8_seq_mult/assets/49861069/c827363b-fd6a-4bc7-8a68-3aeb35f4e387" alt="8x8 Sequential Multiplier Parts">
+  <br>
+  <em>8x8 Sequential Multiplier Parts</em>
+</p>
