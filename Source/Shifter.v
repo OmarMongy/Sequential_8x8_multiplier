@@ -1,4 +1,4 @@
-module Shifter (
+module shifter (
   input [7:0] inp,
   input [1:0] shift_cntrl,
   output reg [15:0] shift_out
