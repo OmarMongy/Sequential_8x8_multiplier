@@ -12,39 +12,39 @@ wire[3:0] aout, bout;
 wire [7:0] product;
 wire [15:0] shift_out, sum;
 
-mux4 A(
+mux4 U0(
 	.mux_in_a(dataa[3:0]),
 	.mux_in_b(dataa[7:4]),
 	.mux_sel(sel[1]),
 	.mux_out(aout)
 );
 
-mux4 B(
+mux4 U1(
 	.mux_in_a(datab[3:0]),
 	.mux_in_b(datab[7:4]),
 	.mux_sel(sel[0]),
 	.mux_out(bout[3:0])
 );
 
-mult4x4 MA(
+mult_4x4 U2(
 	.dataa(aout[3:0]),
 	.datab(bout[3:0]),
 	.product(product[7:0])
 );
 
-shifter SA(
+shifter U3(
 	.inp(product[7:0]),
 	.shift_cntrl(shift[1:0]),
 	.shift_out(shift_out[15:0])
 );
 
-adder AA(
+adder U4(
 	.dataa(shift_out[15:0]),
 	.datab(product8x8_out[15:0]),
 	.sum(sum[15:0])
 );
 
-reg16 RA(
+reg16 U5(
 	.clk(clk),
 	.sclr_n(sclr_n),
 	.clk_ena(clk_ena),
@@ -52,13 +52,13 @@ reg16 RA(
 	.reg_out(product8x8_out[15:0])
 );
 
-counter CA(
+counter U6(
 	.aclr_n(~start),
 	.clk(clk),
 	.count_out(count[1:0])
 );
 
-mult_control MCA(
+mult_control U7(
 	.clk(clk),
 	.reset_a(reset_a),
 	.start(start),
@@ -71,7 +71,7 @@ mult_control MCA(
 	.sclr_n(sclr_n)
 );
 
-seven_segment_cntrl SSCA(
+seven_segment_cntrl U8(
 	.inp(state_out[2:0]),
 	.seg_a(seg_a),
 	.seg_b(seg_b),
