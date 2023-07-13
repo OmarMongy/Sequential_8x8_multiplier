@@ -1,4 +1,4 @@
-# 8x8 Bit Sequential Multiplier
+# Sequential_8x8_multiplier
 
 The 8x8 Bit Sequential Multiplier is a Verilog design that implements an 8x8 bit multiplier using a sequential approach. This project aims to provide an efficient and modular solution for performing multiplication operations on 8-bit operands, resulting in a 16-bit product. The design supports various features, including multi-cycle computation, output signaling, and efficient pin utilization.
 
@@ -96,10 +96,10 @@ During this time period, values that need to be processed within the datapath ar
 <p align="center">
   <img src="https://github.com/islamibr/8x8_seq_mult/assets/49861069/cb2b5981-6e38-4951-a2de-af3769700732" alt="8x8 Sequential Multiplier">
   <br>
-  <em>8x8 Sequential Multiplier</em>
+  <em> Sequential 8x8 multiplier</em>
 </p>
 <p align="center">
   <img src="https://github.com/islamibr/8x8_seq_mult/assets/49861069/c827363b-fd6a-4bc7-8a68-3aeb35f4e387" alt="8x8 Sequential Multiplier Parts">
   <br>
-  <em>8x8 Sequential Multiplier Parts</em>
+  <em>Sequential 8x8 multiplier Parts</em>
 </p>
