@@ -15,7 +15,7 @@ module mult_control (
   localparam CALC_DONE = 3'b100;
   localparam ERR = 3'b101;
 
-  always @(posedge clk) begin
+  always @(posedge clk,negedge reset_a) begin
     if (~reset_a)
       state_out_reg <= IDLE;
     else
